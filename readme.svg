@@ -46,8 +46,8 @@
         .container {
           border-radius: 0.375rem;
           background: var(--color-background);
-          height: calc(100% - 12px);
-          width: calc(100% - 12px);
+          height: calc(100% - 10px);
+          width: calc(100% - 10px);
           display: flex;
           flex-direction: column;
           justify-content: center;
