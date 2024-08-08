@@ -1,7 +1,7 @@
 <svg
   fill="none"
-  viewBox="0 0 600 200"
-  width="600"
+  viewBox="0 0 500 200"
+  width="500"
   height="200"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -27,12 +27,11 @@
           background-size: 200% 200%;
           background-position: 0 0;
           height: 200px;
-          width: 600px;
-          text-transform: uppercase;
+          width: 500px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 0.375rem;
+          border-radius: 6px;
 
           background-image: radial-gradient(
             var(--color-secondary),
@@ -44,31 +43,69 @@
         }
 
         .container {
-          border-radius: 0.375rem;
+          border-radius: 6px;
           background: var(--color-background);
-          height: calc(100% - 10px);
-          width: calc(100% - 10px);
+          height: calc(100% - 6px);
+          width: calc(100% - 6px);
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 20px;
+          gap: 15px;
         }
 
         h1 {
-          font-size: 3rem;
+          font-size: 32px;
           font-weight: 800;
           font-family: "Open Sans", sans-serif;
           text-align: center;
           font-style: italic;
+          text-transform: uppercase;
           color: var(--color-main);
         }
         h3 {
-          font-size: 2rem;
+          font-size: 20px;
           font-weight: 700;
           font-family: "Open Sans", sans-serif;
           text-align: center;
           color: var(--color-primary);
+        }
+        .hi {
+          display: inline-block;
+          transform-origin: 70% 70%;
+          animation: hi 3s linear -2s infinite;
+        }
+        @keyframes hi {
+          25% {
+            transform: rotate(0deg);
+          }
+          30% {
+            transform: rotate(15deg);
+          }
+          35% {
+            transform: rotate(0deg);
+          }
+          40% {
+            transform: rotate(15deg);
+          }
+          45% {
+            transform: rotate(0deg);
+          }
+          80% {
+            transform: rotate(0deg);
+          }
+          85% {
+            transform: rotate(15deg);
+          }
+          90% {
+            transform: rotate(0deg);
+          }
+          95% {
+            transform: rotate(15deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
         }
 
         @keyframes border {
@@ -90,24 +127,24 @@
         }
 
         @media (prefers-reduced-motion) {
-          .body {
+          .body, .hi {
             animation: none;
           }
         }
         @media (prefers-color-scheme: dark) {
-        .body {
-          --color-main: #55e5ff;
-          --color-primary: #fff;
-          --color-secondary: #ef64d8;
-          --color-background: var(--bgColor-default, #000000);
+          .body {
+            --color-main: #55e5ff;
+            --color-primary: #fff;
+            --color-secondary: #ef64d8;
+            --color-background: var(--bgColor-default, #000000);
+          }
         }
-      }
-
       </style>
       <div class="body">
         <div class="container">
           <h1>Maxim Malahov</h1>
           <h3>Python developer</h3>
+          <h3 class="hi">👋</h3>
         </div>
       </div>
     </div>
