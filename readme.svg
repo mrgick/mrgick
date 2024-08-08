@@ -1,0 +1,115 @@
+<svg
+  fill="none"
+  viewBox="0 0 600 350"
+  width="600"
+  height="350"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          color: inherit;
+          text-decoration: none;
+          list-style: none;
+          outline: none;
+          box-sizing: border-box;
+        }
+
+        .body {
+          --color-main: #6b7cc8;
+          --color-primary: #6ab8c6;
+          --color-secondary: #ef64d8;
+          --color-background: #ffffff;
+
+          background-size: 200% 200%;
+          background-position: 0 0;
+          height: 350px;
+          width: 600px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0.375rem;
+
+          background-image: radial-gradient(
+            var(--color-secondary),
+            var(--color-main),
+            var(--color-primary)
+          );
+          animation: border 5s linear infinite;
+          border-color: var(--color-background);
+        }
+
+        .container {
+          border-radius: 0.375rem;
+          background: var(--color-background);
+          height: calc(100% - 12px);
+          width: calc(100% - 12px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+        }
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 800;
+          font-family: "Open Sans", sans-serif;
+          text-align: center;
+          font-style: italic;
+          color: var(--color-main);
+        }
+        h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: "Open Sans", sans-serif;
+          text-align: center;
+          color: var(--color-primary);
+        }
+
+        @keyframes border {
+          0% {
+            background-position: 0 0;
+          }
+          20% {
+            background-position: 100% 0;
+          }
+          40% {
+            background-position: 100% 100%;
+          }
+          60% {
+            background-position: 0 100%;
+          }
+          100% {
+            background-position: 0 0;
+          }
+        }
+
+        @media (prefers-reduced-motion) {
+          .body {
+            animation: none;
+          }
+        }
+        @media (prefers-color-scheme: dark) {
+        .body {
+          --color-main: #55e5ff;
+          --color-primary: #fff;
+          --color-secondary: #ef64d8;
+          --color-background: var(--bgColor-default, #000000);
+        }
+      }
+
+      </style>
+      <div class="body">
+        <div class="container">
+          <h1>Maxim Malahov</h1>
+          <h3>Python developer</h3>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
